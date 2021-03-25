@@ -1,0 +1,16 @@
+<div>
+    <h2>Data Binding Concept</h2>
+    <h3>One way data binding using string interpolation</h3>
+    First Name is {{fname}}
+    <h3>One way data binding using property binding</h3>
+    Last Name <input type="text" [value]="lname">
+    Last Nmae is <span [innerText]="lname"></span>
+    Age is {{age}}
+<br/>
+<input type="button" value="click" (click)="fun()">
+<input type="button" value="changeAge" (click)="changeAge()">
+<br/>
+<h3>Template Reference</h3>
+SkillSet:<input type="text" #skill/>
+<input type="button" value="addSkill" (click)="addSkill(skill.value)" />
+</div>
